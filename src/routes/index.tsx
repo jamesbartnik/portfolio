@@ -1,9 +1,7 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
-import { Root } from "./Root.tsx";
-import { Home } from "../features/Home.tsx";
-import { About } from "../features/About.tsx";
-import { Contact } from "../features/Contact.tsx";
-import { Projects } from "../features/Projects.tsx";
+import { Root } from "./Root";
+import { Home } from "../pages/Home";
+import { ProjectDetails } from "../components/ProjectDetails";
 
 export const router = createBrowserRouter([
   {
@@ -11,20 +9,12 @@ export const router = createBrowserRouter([
     element: <Root />,
     children: [
       {
-        path: "/",
+        index: true,
         element: <Home />,
       },
       {
-        path: "/about",
-        element: <About />,
-      },
-      {
-        path: "/contact",
-        element: <Contact />,
-      },
-      {
-        path: "/projects",
-        element: <Projects />,
+        path: "projects/:id",
+        element: <ProjectDetails />,
       },
     ],
   },
