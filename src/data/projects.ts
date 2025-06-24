@@ -41,4 +41,11 @@ export const projects = [
     liveUrl: "https://xai.games/",
     repoUrl: null,
   },
+  {
+    slug: "coming-soon",
+    title: "Coming soon...",
+    subtitle: "More projects are being added",
+    tags: ["Patience", "Determination", "Resilience"],
+    description: `I worked on the Xai Games website from initial planning to live deployment. Built using React and Tailwind with a Node.js + Express backend, the project involved integrating bold brand visuals, launch content, and responsive layout polish. We used Terraform and Docker to deploy the infrastructure to Google Cloud Platform (GCP), with Cloudflare handling DNS and performance optimization.`,
+  },
 ];

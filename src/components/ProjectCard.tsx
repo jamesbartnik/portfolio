@@ -3,7 +3,7 @@ import { Link } from "@tanstack/react-router";
 interface ProjectCardProps {
   title: string;
   subtitle: string;
-  image: string;
+  image?: string;
   tags: string[];
   href: string;
 }
@@ -20,7 +20,12 @@ export const ProjectCard = ({
       to={href}
       className="group block overflow-hidden rounded-lg shadow transition hover:shadow-xl"
     >
-      <img src={image} alt={title} className="h-48 w-full object-cover" />
+      {image ? (
+        <img src={image} alt={title} className="h-48 w-full object-cover" />
+      ) : (
+        <div className="h-48 w-full bg-gray-400 object-cover" />
+      )}
+
       <div className="bg-gray-100 p-4">
         <h3 className="text-xl font-semibold">{title}</h3>
         <p className="text-sm text-gray-600">{subtitle}</p>

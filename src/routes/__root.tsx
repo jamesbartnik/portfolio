@@ -2,7 +2,6 @@ import { createRootRoute, Link, Outlet } from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
 
 const navLinks = [
-  { name: "Home", to: "/" },
   { name: "Projects", to: "/projects" },
   { name: "About", to: "/about" },
 ];
@@ -12,9 +11,12 @@ export const Route = createRootRoute({
     <>
       <header className="bg-white shadow">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
-          <div className="text-2xl font-bold tracking-tight text-blue-600">
+          <Link
+            to="/"
+            className="text-2xl font-bold tracking-tight text-blue-600 hover:opacity-80"
+          >
             James Bartnik
-          </div>
+          </Link>
           <nav className="flex gap-6">
             {navLinks.map(({ name, to }) => (
               <Link
