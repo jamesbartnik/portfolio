@@ -1,0 +1,26 @@
+<svg width="334.375" height="334.375" viewBox="0 0 334.375 334.375" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="grad1">
+            <stop stop-color="#b98947" offset="0"/>
+            <stop stop-color="#faf0a1" offset="1"/>
+        </linearGradient>
+        <linearGradient id="grad2">
+            <stop stop-color="#b98947" offset="0"/>
+            <stop stop-color="#faf0a1" offset="1"/>
+        </linearGradient>
+    </defs>
+
+    <g transform="scale(6.6875)">
+        <circle cx="25" cy="25" r="25" fill="#060606"/>
+    </g>
+
+    <g transform="translate(139.693,46.103) scale(0.10667)" fill="url(#grad1)">
+        <polygon points="121.6,256.1 170.1,207.7 143.5,181.1 68.5,256.1 122.5,310.1 148.9,283.4"/>
+        <polygon points="389.5,202.1 363.1,228.7 390.4,256.1 342.1,304.6 368.5,331.1 443.5,256.1"/>
+        <rect x="96.9" y="237.3" transform="rotate(360 256 256)" width="318.2" height="37.5"/>
+    </g>
+
+    <g transform="translate(114.983,71.295) scale(10.0862)" fill="url(#grad2)">
+        <path d="M0.2 18.46q0.3 0.14 0.96 0.14q0.98 0 0.98 -1.28v-13.78h1.52v13.78q0 1.46 -0.64 2.13t-1.86 0.67q-0.68 0 -0.96 -0.14v-1.52zM8.4945 6.34q0 -0.7 -0.23 -0.98t-0.79 -0.28h-1.1v5.82h1.12q0.54 0 0.77 -0.26t0.23 -0.84v-3.46zM8.5545 13.56q0 -0.7 -0.21 -1.01t-0.85 -0.31h-1.12v6.26h1.1q1.08 0 1.08 -1.28v-3.66zM4.8545 20v-16.46h2.62q1.32 0 1.88 0.66t0.56 2.16v3.3q0 1.54 -1 1.82q0.48 0.1 0.84 0.51t0.36 1.31v3.92q0 1.46 -0.66 2.12t-1.98 0.66h-2.62z"/>
+    </g>
+</svg>
